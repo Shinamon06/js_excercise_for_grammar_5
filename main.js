@@ -6,7 +6,7 @@
 
 // ここにisOddNumber関数を作る
 function isOddNumber(num) {
-    return num % 2 == 1;
+    return num % 2 === 1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
@@ -31,7 +31,7 @@ const factorial = function(int) {
         result = result * i;
     }
     return result;
-}
+;}
 
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
 console.log('4を入力したら24が返るべき' , factorial(4) );
@@ -39,12 +39,12 @@ console.log('5を入力したら120が返るべき' , factorial(5) );
 
 //チャレンジ問題
 function fact(int) {
-    if(int != 0) {
+    if(int > 1) {
         return int * fact(int - 1);
     }
     return 1;
     
-}
+};
 
 console.log('【チャレンジ問題】4を入力したら24が返るべき' , fact(4) );
 console.log('【チャレンジ問題】5を入力したら120が返るべき' , fact(5) );
@@ -60,7 +60,7 @@ console.log('【チャレンジ問題】5を入力したら120が返るべき' ,
 // ここにconvertFirstCharacterToUpperCase関数を作る
 const convertFirstCharacterToUpperCase = (text) => {
     return text.charAt(0).toUpperCase() + text.slice(1);
-}
+};
 
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
 console.log('「"hello"」を入力したら「"Hello"」が返るべき' , convertFirstCharacterToUpperCase('hello') );
